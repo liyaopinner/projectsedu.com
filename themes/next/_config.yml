@@ -291,8 +291,8 @@ alipay: http://120.52.23.73/bobby/scropio-doc/uploads/db6586a901d713bcc82b762863
  
 # Social links
 social:
-  GitHub: https://github.com/your-user-name
-  微博: http://weibo.com/your-user-name
+  GitHub: https://github.com/liyaopinner
+  微博: http://weibo.com/u/1272188234/home?wvr=5
   # 等等
 
 
@@ -309,9 +309,9 @@ facebook_sdk:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: OWUoxB0LNDhpepeGQzJMS4jk-gzGzoHsz
+  app_key: KbVCQeLAsRRJnVgLYS0MFCju
 
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/

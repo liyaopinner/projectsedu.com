@@ -2,7 +2,7 @@
 title: python入门
 date: 2016-10-14 13:57:27
 tags: python
-categories: Testing
+categories: django
 ---
 
 
