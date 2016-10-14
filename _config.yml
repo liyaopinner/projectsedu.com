@@ -3,19 +3,21 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
+title: 聚学在线
+subtitle: 专注python学习
+description: 专注于python, django全栈开发
+author: bobbyli
+language: zh-Hans
 timezone:
-
+avatar: http://120.52.23.73/bobby/scropio-doc/uploads/88a62fefd99309cd0da578d0141a8a6b/QQ%E6%88%AA%E5%9B%BE20160613101025.png
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://yoursite.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
+baidu_analytics: 446cddf919cd363c1a5e8b2972d945a3
+google_analytics: UA-85710020-1
 
 # Directory
 source_dir: source
@@ -60,10 +62,23 @@ time_format: HH:mm:ss
 per_page: 10
 pagination_dir: page
 
+duoshuo_hotartical: true
+duoshuo_shortname: projectsedu
+jiathis: true
+mathjax: true
+rss: true
+leancloud_visitors:
+  enable: true
+  app_id: ri3TAFeceDitf2g8E42V4CcU-gzGzoHsz
+  app_key: hKwOrgICqXydnEatIrzUmHLj
+
+search:
+  path: search.xml
+  field: post
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
