@@ -310,8 +310,8 @@ facebook_sdk:
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
   enable: true
-  app_id: OWUoxB0LNDhpepeGQzJMS4jk-gzGzoHsz
-  app_key: KbVCQeLAsRRJnVgLYS0MFCju
+  app_id: QLs2fbgQYhk3BVJCotvVmP0G-gzGzoHsz
+  app_key: 4W1EGSbOTwHkuzJeAYafMygh
 
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
