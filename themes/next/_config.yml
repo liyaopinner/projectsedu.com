@@ -280,14 +280,16 @@ duoshuo_info:
   user_id: 0
   admin_nickname: bobbyliyao
  
-wechat_subscriber:
-  enabled: true
-  qcode: http://120.52.23.73/bobby/scropio-doc/uploads/db6586a901d713bcc82b762863705174/weixin.png
-  description: 欢迎您扫一扫上面的微信公众号，订阅我的微信！
+#订阅功能
+#wechat_subscriber:
+#  enabled: true
+#  qcode: http://120.52.23.73/bobby/scropio-doc/uploads/db6586a901d713bcc82b762863705174/weixin.png
+#  description: 欢迎您扫一扫上面的微信公众号，订阅我的微信！
 
-reward_comment: 
-wechatpay: http://120.52.23.73/bobby/scropio-doc/uploads/db6586a901d713bcc82b762863705174/weixin.png
-alipay: http://120.52.23.73/bobby/scropio-doc/uploads/db6586a901d713bcc82b762863705174/weixin.png
+#打赏功能
+#reward_comment: 
+#wechatpay: http://120.52.23.73/bobby/scropio-doc/uploads/db6586a901d713bcc82b762863705174/weixin.png
+#alipay: http://120.52.23.73/bobby/scropio-doc/uploads/db6586a901d713bcc82b762863705174/weixin.png
  
 # Social links
 social:
