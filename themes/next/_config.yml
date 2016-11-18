@@ -3,7 +3,7 @@
 # ---------------------------------------------------------------
 
 # Put your favicon.ico into `hexo-site/source/` directory.
-favicon: /favicon.ico
+favicon: /32X32.ico
 
 # Set default keywords (Use a comma to separate)
 keywords: "Hexo, NexT"
@@ -30,6 +30,7 @@ menu:
   home: /
   archives: /archives
   categories: /categories
+  muxue: /categories/django/慕学在线网/
   #about: /about
   #tags: /tags
   #commonweal: /404.html
@@ -50,6 +51,7 @@ menu_icons:
   archives: archive
   commonweal: heartbeat
   search: search
+  muxue: server
 
 
 
