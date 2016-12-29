@@ -17,7 +17,7 @@ root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 baidu_analytics: 446cddf919cd363c1a5e8b2972d945a3
-google_analytics: UA-85710020-1
+
 
 # Directory
 source_dir: source
