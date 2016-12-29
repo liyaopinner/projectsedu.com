@@ -156,3 +156,7 @@ get_internal_wsgi_application的源码如下：
 
 
     大部分web框架都有自己的Template(模板)系统，Django也是。但是，Django模板不同于Mako模板和jinja2模板，在Django模板不能直接写Python代码，只能通过额外的定义filter和template tag实现。由于本文主要介绍Django流程，模板内容就不过多介绍。
+	
+最后欢迎大家观看我关于 django + xadmin的教程：
+
+	http://coding.imooc.com/class/evaluation/78.html

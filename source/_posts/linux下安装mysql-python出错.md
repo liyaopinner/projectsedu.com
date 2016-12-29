@@ -29,3 +29,8 @@ tags: 慕学在线网
 
 
 然后重新安装就ok了
+
+
+最后欢迎大家观看我关于 django + xadmin的教程：
+
+	http://coding.imooc.com/class/evaluation/78.html

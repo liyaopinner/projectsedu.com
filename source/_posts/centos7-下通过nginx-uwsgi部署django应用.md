@@ -109,5 +109,9 @@ categories:
 10 访问
     
     http://你的ip地址/
+	
+最后欢迎大家观看我关于 django + xadmin的教程：
+
+	http://coding.imooc.com/class/evaluation/78.html
     
     

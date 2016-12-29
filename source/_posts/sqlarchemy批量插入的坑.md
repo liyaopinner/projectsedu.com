@@ -71,3 +71,8 @@ views.py
         加上people1.age = None
         
     具体原因还没有看源码，以后有时间再研究
+
+	
+最后欢迎大家观看我关于 django + xadmin的教程：
+
+	http://coding.imooc.com/class/evaluation/78.html

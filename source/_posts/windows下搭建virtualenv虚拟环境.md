@@ -103,3 +103,9 @@ tags:
 ![mark](http://of66as8gb.bkt.clouddn.com/blog/20161017/161615326.png)
 
 小伙伴有没有觉得so easy
+
+
+
+最后欢迎大家观看我关于 django + xadmin的教程：
+
+	http://coding.imooc.com/class/evaluation/78.html

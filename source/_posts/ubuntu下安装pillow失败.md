@@ -19,3 +19,8 @@ ubuntu 16.04下
 然后重新运行
 
     pip install pillow
+
+	
+最后欢迎大家观看我关于 django + xadmin的教程：
+
+	http://coding.imooc.com/class/evaluation/78.html

@@ -39,4 +39,8 @@ windows安装python的mysql驱动是so easy的：
 ![image](http://of66as8gb.bkt.clouddn.com/blog/20161017/104709908.png)
     
 oh yeah， 成功啦， 我门就可以快速的开始我门下一步的开发工作了
-    
+ 
+
+最后欢迎大家观看我关于 django + xadmin的教程：
+
+	http://coding.imooc.com/class/evaluation/78.html
