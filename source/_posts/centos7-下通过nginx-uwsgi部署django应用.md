@@ -1,6 +1,6 @@
 ---
 title: centos7 下通过nginx+uwsgi部署django应用
-date: 2016-12-29 14:03:36
+date: 2017-02-07 14:03:36
 categories: 
 - django
 - 慕学在线网
@@ -23,7 +23,6 @@ categories:
 >     编辑.bashrc文件
     
     export WORKON_HOME=$HOME/.virtualenvs
-    export PROJECT_HOME=$HOME/Devel
     source /usr/local/bin/virtualenvwrapper.sh
     
 >     重新加载.bashrc文件
@@ -36,7 +35,13 @@ categories:
     workon mxoline
 
 >     安装pip包
+    
+    我们可以通过 pip freeze > requirements.txt 将本地的虚拟环境安装包相信信息导出来
+    
+    然后将requirements.txt文件上传到服务器之后运行：
+    
     pip install -r requirements.txt
+    安装依赖包
     
 3. 安装uwsgi
     
@@ -44,7 +49,7 @@ categories:
 
 4. 测试uwsgi
     
-    uwsgi --http :8000 --module Mxoline.wsgi
+    uwsgi --http :8000 --module MxOnline.wsgi
 
 5. 配置nginx
     
@@ -99,12 +104,45 @@ categories:
 8. 运行nginx
     
     sudo /usr/sbin/nginx
-
-9. 运行nginx
     
+这里需要注意 一定是直接用nginx命令启动， 不要用systemctl启动nginx不然会有权限问题
+
+9. 通过配置文件启动uwsgi
+
+    新建uwsgi.ini 配置文件， 内容如下：
+        
+        # mysite_uwsgi.ini file
+        [uwsgi]
+        
+        # Django-related settings
+        # the base directory (full path)
+        chdir           = /home/bobby/Projects/MxOnline
+        # Django's wsgi file
+        module          = MxOnline.wsgi
+        # the virtualenv (full path)
+        
+        # process-related settings
+        # master
+        master          = true
+        # maximum number of worker processes
+        processes       = 10
+        # the socket (use the full path to be safe
+        socket          = 127.0.0.1:8000
+        # ... with appropriate permissions - may be needed
+        # chmod-socket    = 664
+        # clear environment on exit
+        vacuum          = true
+        virtualenv = /home/bobby/.virtualenvs/mxonline
+    
+    注：
+        chdir： 表示需要操作的目录，也就是项目的目录
+        module： wsgi文件的路径
+        processes： 进程数
+        virtualenv：虚拟环境的目录
+            
     
     workon mxonline
-    uwsgi -i 你的目录/Mxonline/conf/uwsgi &
+    uwsgi -i 你的目录/Mxonline/conf/uwsgi.ini &
 
 10 访问
     
