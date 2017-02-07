@@ -243,7 +243,8 @@ mathjax:
 #baidu_analytics:
 
 # Duoshuo ShortName
-#duoshuo_shortname:
+duoshuo_hotartical: true
+duoshuo_shortname: projectsedu
 
 # Disqus
 #disqus_shortname:
