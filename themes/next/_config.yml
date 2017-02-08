@@ -246,6 +246,9 @@ mathjax:
 duoshuo_hotartical: true
 duoshuo_shortname: projectsedu
 
+comments:
+    yungentie: http://projectsedu.com
+
 # Disqus
 #disqus_shortname:
 
