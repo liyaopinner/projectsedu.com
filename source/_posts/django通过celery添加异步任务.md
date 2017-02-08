@@ -130,7 +130,7 @@ tags:
 
 ### 集成celery到django中
 
-   *这里以我的一门django搭建在线教育平台的课程为例来讲解，大家如果有兴趣可以去关注一下，课程[强力django+杀手级xadmin][2]*
+   *这里以我的一门django搭建在线教育平台的课程为例来讲解，大家如果有兴趣可以去关注一下，课程[强力django+杀手级xadmin](http://coding.imooc.com/class/78.html)*
 
    首先我们来看一下完整的系统结构图：
 ![image](http://okwbmb2ka.bkt.clouddn.com/%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84.png)
@@ -225,11 +225,9 @@ tags:
     
         以此来启动celery的worker服务
 
-*关于django是如何实现邮件发送以及如何配置邮件的发送方配置，在课程 [强力django+杀手级xadmin][http://coding.imooc.com/class/78.html]中我会详细讲解，并包含django实现cookie和session的登录原理。*
+
     
+关于django是如何实现邮件发送以及如何配置邮件的发送方配置，在课程[强力django+杀手级xadmin](http://coding.imooc.com/class/78.html)中我会详细讲解，另外，课程中还会讲解django实现cookie和session的登录原理，当然django的强大绝不止于此，尤其是结合xadmin，你几乎可以做到以最快的速度搭建完整的前后台，如果你想全面掌握django，谋求一份python web 开发的工作，那就跟我一起来做一次实战：用django开发一个完整的在线教育网站，在实战中学习是掌握技术的捷径，你不仅会理解真实开发与纯理论的差别，更会了解如何避免开发中的“坑”，同时，这套完整的在线教育网站的全套代码都会开放给你，你甚至可以直接拿来用在工作中，所以如果这些是你想要的，那么我在慕课网等着你
+
+
 至此，大功告成了！我们可以在我们定义的任何apps中添加tasks来定义需要的异步任务。
-
-
-  [1]: http://coding.imooc.com/class/78.html
-  [2]: http://coding.imooc.com/class/78.html
-  [3]: http://coding.imooc.com/class/78.html
