@@ -1,10 +1,77 @@
 ---
 title: centos7 下通过nginx+uwsgi部署django应用
-date: 2017-02-07 14:03:36
+date: 2017-08-15 14:03:36
 categories: 
 - django
 - 慕学在线网
+- 生鲜电商
 ---
+
+##### 环境准备
+
+1. 安装python3.6
+
+    
+    1. 获取
+
+    wget https://www.python.org/ftp/python/3.6.2/Python-3.6.2.tgz
+    tar -xzvf Python-3.6.2.tgz -C  /tmp
+    cd  /tmp/Python-3.6.2/
+    
+    把Python3.6安装到 /usr/local 目录
+     
+    ./configure --prefix=/usr/local
+    make
+    make altinstall
+    
+    更改/usr/bin/python链接
+    
+    ln -s /usr/local/bin/python3.6 /usr/bin/python3
+    
+    
+2. maridb
+    
+    1. 安装
+        
+        sudo yum install mariadb-server
+    2. 启动， 重启
+        
+        sudo systemctl start mariadb
+        sudo systemctl restart mariadb
+
+    3. 设置bind-ip
+        
+        vim /etc/my.cnf
+        在 [mysqld]:
+            下面加一行
+            bind-address = 0.0.0.0
+        
+    4. 设置外部ip可以访问
+    
+        先进入mysql才能运行下面命令:
+            mysql 直接进入就行
+            
+        GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '123456' WITH GRANT OPTION;
+        
+        FLUSH PRIVILEGES
+        
+    5. 设置阿里云的对外端口
+        
+       视频中有讲解这部分
+    
+    6. 安装mysqlclient出问题
+    
+        centos 7：
+            yum install python-devel mariadb-devel -y
+            
+        ubuntu：
+            sudo apt-get install libmysqlclient-dev
+            
+        然后：
+            pip install mysqlclient
+        
+
+
 
 ##### uwsgi + nginx 搭建
     
@@ -29,10 +96,10 @@ categories:
     source  ~/.bashrc
     
 >     新建虚拟环境
-    mkvirtualenv mxoline
+    mkvirtualenv mxonline
 
 >     进入虚拟环境 
-    workon mxoline
+    workon mxonline
 
 >     安装pip包
     
