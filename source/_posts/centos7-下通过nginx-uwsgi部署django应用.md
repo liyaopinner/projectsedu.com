@@ -7,9 +7,8 @@ categories:
 - 生鲜电商
 ---
 
-##### 环境准备
 
-1. 安装python3.6
+#####  1. 安装python3.6
 
     
     1. 获取
@@ -18,18 +17,18 @@ categories:
     tar -xzvf Python-3.6.2.tgz -C  /tmp
     cd  /tmp/Python-3.6.2/
     
-    把Python3.6安装到 /usr/local 目录
+    2. 把Python3.6安装到 /usr/local 目录
      
     ./configure --prefix=/usr/local
     make
     make altinstall
     
-    更改/usr/bin/python链接
+    3. 更改/usr/bin/python链接
     
     ln -s /usr/local/bin/python3.6 /usr/bin/python3
     
     
-2. maridb
+#####  2. maridb
     
     1. 安装
         
@@ -72,16 +71,12 @@ categories:
         
 
 
-
-##### uwsgi + nginx 搭建
-    
-
-1. 安装nginx
+##### 3. 安装nginx
 
 
     https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-centos-7
     
-2. 安装virtualenvwrapper
+##### 4. 安装virtualenvwrapper
     
 
     yum install python-setuptools python-devel
@@ -110,15 +105,15 @@ categories:
     pip install -r requirements.txt
     安装依赖包
     
-3. 安装uwsgi
+##### 5. 安装uwsgi
     
     pip install uwsgi
 
-4. 测试uwsgi
+##### 6. 测试uwsgi
     
     uwsgi --http :8000 --module MxOnline.wsgi
 
-5. 配置nginx
+##### 7. 配置nginx
     
     新建uc_nginx.conf
 
@@ -156,11 +151,11 @@ categories:
     }
     }
 
-6. 将该配置文件加入到nginx的启动配置文件中
+##### 8. 将该配置文件加入到nginx的启动配置文件中
     
     sudo ln -s 你的目录/Mxonline/conf/nginx/uc_nginx.conf /etc/nginx/conf.d/
 
-7. 拉取所有需要的static file 到同一个目录
+##### 8. 拉取所有需要的static file 到同一个目录
     
     在django的setting文件中，添加下面一行内容：
     
@@ -168,13 +163,13 @@ categories:
     运行命令
         python manage.py collectstatic
 
-8. 运行nginx
+##### 9. 运行nginx
     
     sudo /usr/sbin/nginx
     
 这里需要注意 一定是直接用nginx命令启动， 不要用systemctl启动nginx不然会有权限问题
 
-9. 通过配置文件启动uwsgi
+##### 10. 通过配置文件启动uwsgi
 
     新建uwsgi.ini 配置文件， 内容如下：
         
@@ -200,6 +195,8 @@ categories:
         # clear environment on exit
         vacuum          = true
         virtualenv = /home/bobby/.virtualenvs/mxonline
+        
+        logto = /tmp/mylog.log
     
     注：
         chdir： 表示需要操作的目录，也就是项目的目录
@@ -211,12 +208,10 @@ categories:
     workon mxonline
     uwsgi -i 你的目录/Mxonline/conf/uwsgi.ini &
 
-10 访问
+##### 访问
     
     http://你的ip地址/
 	
-最后欢迎大家观看我关于 django + xadmin的教程：
 
-	http://coding.imooc.com/class/evaluation/78.html
     
     
