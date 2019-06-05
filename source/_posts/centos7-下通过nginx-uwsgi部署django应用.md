@@ -10,7 +10,12 @@ categories:
 
 #####  1. 安装python3.6
 
-    
+    提前安装好系统依赖包：
+   	centos: 
+	    yum install openssl-devel bzip2-devel expat-devel gdbm-devel readline-devel sqlite-devel gcc gcc-c++  openssl-devel libffi-devel python-devel mariadb-devel
+	ubuntu:
+	   sudo apt-get install zlib1g-dev libbz2-dev libssl-dev libncurses5-dev libsqlite3-dev libreadline-dev tk-dev libgdbm-dev libdb-dev libpcap-dev xz-utils libexpat1-dev liblzma-dev libffi-dev libc6-dev
+	   
     1. 获取
 
     wget https://www.python.org/ftp/python/3.6.2/Python-3.6.2.tgz
